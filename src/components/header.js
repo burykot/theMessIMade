@@ -7,8 +7,8 @@ class Header extends Component {
     return <div>
       <Navbar />
       <img src="./images/stage-min.jpg" alt="Quadcopter picture"/>
-        <div>
-          <h1>#FPVlive</h1>
+        <div className="stage-desc">
+          <h1>#FPVlife</h1>
           <span>of KonradS</span>
         </div>
       </div>

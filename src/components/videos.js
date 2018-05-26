@@ -1,10 +1,18 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import VideosItem from './videos-item'
 
 class Videos extends Component {
+  videoList(data){
+    return data.map((video) => {
+      return <VideosItem
+        key={video.id}
+        video={video} />
+    })
+  }
+
   render () {
-    return <div>
-      <p>videos</p>
+    return <div className="videoWrapper">
+      {this.videoList(this.props.data)}
     </div>
   }
 }

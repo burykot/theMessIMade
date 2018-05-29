@@ -1,19 +1,5 @@
-*{margin:0;padding:0;box-sizing:border-box;}
-.stage{max-width:100%}
- // sticky footer
-html {
-  height: 100%;
-}
-body, #root{
-  height: 100%;
-}
-.App {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
-}
-#footer {
-grid-row-start: 2;
-grid-row-end: 3;
-}
- // END sticky footer
+@import '_bits';
+@import '_header';
+@import '_posts';
+@import '_videos';
+@import '_footer';

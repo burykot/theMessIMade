@@ -17,22 +17,62 @@
     grid-template-columns:1fr 1fr;
   }
 }
-.post-image{
-  width:100%;
-  box-shadow: 0 3px #232987;
-  @include breakpoint(l){
-    img{width:50%;}
+.post{
+  border-radius: 6px;
+  position:relative;
+  @include breakpoint(m){
+    background:#fff;
+    animation: colourIn 0.3s;
   }
 }
+@include breakpoint(m){
+.post:hover{
+    background:#222;
+    animation: colourOut 0.3s;
+    .post-image{
+      opacity:0.2;
+      animation: fadeOut 0.3s;
+    }
+    .postDescriptionWrapper{
+      opacity: 1;
+      animation: fadeAllIn 0.3s;
+    }
+  }
+}
+
+.post-image{
+  width:100%;
+  height:400px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  border-radius: 6px;
+  @include breakpoint(m){
+    opacity: 1;
+    animation: fadeIn 0.3s;
+  }
+}
+
 .postDescriptionWrapper{
   margin:-4px;
+  bottom:20px;
+  left:0;
+  @include breakpoint(m){
+    position:absolute;
+    opacity:0.5;
+    animation: fadeAllOut 0.3s;
+  }
 }
+
 .post h2{
   padding: 15px 15px 0 15px;
   line-height:140%;
   color: $color-base;
   // background-color: #15155e;
   font-weight: normal;
+  @include breakpoint(m){
+    color:#fff;
+  }
 }
 .post-date{
   margin-bottom:11px;
@@ -47,6 +87,10 @@
   line-height:140%;
   margin-bottom:11px;
   font-size:20px;
+  @include breakpoint(m){
+    color:#fff;
+    font-size:16px;
+  }
 }
 .readmore{
   display:inline-block;
@@ -54,4 +98,32 @@
   color:#fff;
   background:$color-base;
   padding:5px 8px;
+}
+
+@keyframes colourOut {
+    0% { background:#fff; }
+    100% { background:#222; }
+}
+
+@keyframes colourIn {
+    0% { background:#222; }
+    100% { background:#fff; }
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+@keyframes fadeAllOut {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+@keyframes fadeAllIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
 }

@@ -9,8 +9,8 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/css/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/css/ -o src/ --watch --recursive",
+    "build-css": "node-sass-chokidar src/css/ -o src/ --output-style compressed",
+    "watch-css": "npm run build-css && node-sass-chokidar src/css/ -o src/ --watch --recursive --output-style compressed",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

@@ -9,6 +9,9 @@
 # production
 /build
 
+/public/images/articles
+/src/App.css
+
 # misc
 .DS_Store
 .env.local

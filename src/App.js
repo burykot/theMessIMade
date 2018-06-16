@@ -4,6 +4,7 @@ import Header from './components/header'
 import Posts from './components/posts'
 import Videos from './components/videos'
 import Footer from './components/footer'
+import Intro from './components/intro'
 
 import ArticleData from './data/articles'
 import VideoData from './data/videos'
@@ -18,6 +19,7 @@ class App extends Component {
       <div className="App">
         <div className="bodywrapper">
           <Header />
+          <Intro />
           <Posts data={this.featuredArticles(ArticleData, 1)}/>
           <Videos data={VideoData} quantity="3" />
           <Posts data={this.featuredArticles(ArticleData, 0)} />

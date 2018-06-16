@@ -6,12 +6,15 @@
 .stageWrapper{
   background-color: #232987;
   width:100%;
-  height:80vh;
-  background:url('./assets/stage-min.jpg');
-  background-position: top center !important;
-  transform: scale(1.0);
-  animation: zoom 35s ease-in-out 1s infinite;
-  animation-fill-mode: forwards;
+  height:100px;
+  @include breakpoint(m){
+    height:50vh;
+    background:url('./assets/stage-min.jpg');
+    background-position: top center !important;
+    transform: scale(1.0);
+    animation: zoom 35s ease-in-out 1s infinite;
+    animation-fill-mode: forwards;
+  }
 }
 .stage-desc{
   position:absolute;
@@ -24,7 +27,7 @@
 }
 .stage-desc h1{
   font-size:30px;
-  font-family:$font-stack-sans;
+  font-family:$font-stack-header;
   @include breakpoint(m){
     font-size:70px;
   }

@@ -1,12 +1,16 @@
 $color-text-base: #333;
 $color-base: #232987;
+$color-alternate: #FD591C;
 $color-base-contrast: #fff;
-$font-stack-serif: times, serif;
-$font-stack-sans: tahoma, arial, sans-serif;
+$font-stack-header: Oswald, Lato, sans;
+$font-stack-sans: Lato, arial, sans;
 
 *{margin:0;padding:0;box-sizing:border-box;font-family:$font-stack-sans}
 img{max-width:100%;}
 a{text-decoration:none;}
+h1, h2, h3, h4{font-family:$font-stack-header;}
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
 
 // breakpoints mixin
 @mixin breakpoint($point) {

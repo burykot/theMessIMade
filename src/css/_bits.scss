@@ -9,6 +9,10 @@ $font-stack-sans: Lato, arial, sans;
 img{max-width:100%;}
 a{text-decoration:none;}
 h1, h2, h3, h4{font-family:$font-stack-header;}
+h2{
+  font-size: 45px;
+  font-weight:normal;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
 
@@ -20,4 +24,41 @@ h1, h2, h3, h4{font-family:$font-stack-header;}
    @else if $point == l {
      @media screen and (min-width: 1200px) { @content ; }
   }
+}
+
+
+@keyframes colourOut {
+    0% { background:#fff; }
+    100% { background:#222; }
+}
+@keyframes colourIn {
+    0% { background:#222; }
+    100% { background:#fff; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeAllOut {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+@keyframes fadeAllIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes fullFadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes fullFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

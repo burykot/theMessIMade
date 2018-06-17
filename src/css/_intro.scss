@@ -11,19 +11,13 @@
     margin:0 auto;
     max-width:1200px;
   }
-
 }
-// .introWrapper img{
-//   grid-row-start:1;
-//   @include breakpoint(m){
-//     grid-row-start:auto;
-//     grid-column-start: 2;
-//   }
-// }
-.intro h2, p {
+
+.intro h2, p, ul {
   grid-column-start: 1;
   padding-top: 20px;
   max-width:100%;
+  color:$color-text-base;
   @include breakpoint(m){
     padding-left:40px;
   }
@@ -34,12 +28,11 @@
 .intro li{
   margin-left:20px;
 }
-.intro h2{
-  font-size: 45px;
-  font-weight:normal;
-}
 .intro a{
   color:$color-alternate;
+}
+.intro ul{
+  padding-top:0;
 }
 .socialWrapper{
   grid-row-start: 2;
@@ -52,7 +45,6 @@
       height:50px;
     }
   }
-
   @include breakpoint(m){
     margin-bottom:0;
     grid-row-start: 2;

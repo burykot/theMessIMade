@@ -11,9 +11,9 @@ class Intro extends Component {
         "achievements" - reviews, tests, mods, articles and adventures.</p>
         <p>I mostly fly quadcopters that I build myself. If you are interested in joining the fun, you can find a lot of resources needed to learn how to build your own RC craft:</p>
           <ul>
-            <li><a href="https://oscarliang.com/">Oscar Liangs</a> site</li>
-            <li><a href="http://intofpv.com/">Intofpv forum</a> and <a href="https://web.facebook.com/groups/Copter.Fans">facebook group</a></li>
-            <li><a href="https://www.youtube.com/channel/UCX3eufnI7A2I7IkKHZn8KSQ">Joshua Bardwells videos</a></li>
+            <li>read on <a href="https://oscarliang.com/">Oscar Liangs</a> site</li>
+            <li>ask on <a href="http://intofpv.com/">Intofpv forum</a> and <a href="https://web.facebook.com/groups/Copter.Fans">facebook group</a></li>
+            <li>watch on <a href="https://www.youtube.com/channel/UCX3eufnI7A2I7IkKHZn8KSQ">Joshua Bardwells videos</a></li>
           </ul>
         <p>Also - feel free to PM me on intofpv or insta</p>
 

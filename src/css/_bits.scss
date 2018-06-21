@@ -29,19 +29,19 @@ h2{
 
 @keyframes colourOut {
     0% { background:#fff; }
-    100% { background:#222; }
+    100% { background:#efefef; }
 }
 @keyframes colourIn {
-    0% { background:#222; }
+    0% { background:#efefef; }
     100% { background:#fff; }
 }
 
 @keyframes fadeOut {
     0% { opacity: 1; }
-    100% { opacity: 0.2; }
+    100% { opacity: 0.8; }
 }
 @keyframes fadeIn {
-    0% { opacity: 0.2; }
+    0% { opacity: 0.8; }
     100% { opacity: 1; }
 }
 
